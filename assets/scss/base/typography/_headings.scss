@@ -83,6 +83,23 @@ Styleguide Typography.Heading Sizes
   @include core-24();
 }
 
+
+/*
+Bold h3 heading
+
+Experimental: Bold h3 heading for tcs-payments
+
+Markup:
+<h3 class="{{modifier_class}}">header example</h3>
+
+.heading-24-bold - a bold font size 24px header
+*/
+
+.heading-24-bold {
+  @include bold-24();
+  margin-bottom: 0;
+}
+
 /*
 Underlined Headings
 
@@ -117,4 +134,19 @@ Styleguide Typography.Pre Heading
   display: block;
   color: #6f777b;
   margin-bottom: em(8);
+}
+
+/*
+Blue large heading
+
+Experimental: Large blue title heading
+
+Markup:
+<h2 class="heading-large--blue">Text</h2>
+
+.Blue large heading - container for payment currency
+*/
+.heading-large--blue {
+  @include bold-48();
+  color: $govuk-blue-colour;
 }
